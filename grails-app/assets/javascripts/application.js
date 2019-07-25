@@ -8,5 +8,8 @@
 //= require jquery-3.3.1.min
 //= require bootstrap
 //= require popper.min
-//= require userPortal
+//= require jquery-confirm
+//= require userportal
+//= require userportal.message.box
+//= require userportal.init
 //= require_self

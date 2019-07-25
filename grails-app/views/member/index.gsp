@@ -50,9 +50,9 @@
                         %{--Table Actions --}%
                         <td>
                             <div class="btn-group">
-                                <g:link controller="member" action="details" class="btn btn-secondary" id="${info.id}"><i class="fas fa-eye"></i></g:link>
-                                <g:link controller="member" action="edit" class="btn btn-secondary" id="${info.id}"><i class="fas fa-edit"></i></g:link>
-                                <g:link controller="member" action="delete" id="${info.id}" class="btn btn-secondary delete-confirmation"><i class="fas fa-trash"></i></g:link>
+                                <g:link controller="member" action="details" class="btn btn-secondary" id="${info.id}">Details</g:link>
+                                <g:link controller="member" action="edit" class="btn btn-secondary" id="${info.id}">Edit</g:link>
+                                <g:link controller="member" action="delete" id="${info.id}" class="btn btn-secondary delete-confirmation">Delete</g:link>
                             </div>
                         </td>
                     </tr>
