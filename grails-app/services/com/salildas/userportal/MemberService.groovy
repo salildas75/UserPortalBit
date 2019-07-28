@@ -9,7 +9,7 @@ class MemberService {
         def response = AppUtil.saveResponse(false, member)
         if (member.validate()) {
             member.save(flush: true)
-            if (!member.hasErrors()){
+            if (!member.hasErrors()) {
                 response.isSuccess = true
             }
         }
@@ -22,7 +22,7 @@ class MemberService {
         def response = AppUtil.saveResponse(false, member)
         if (member.validate()) {
             member.save(flush: true)
-            if (!member.hasErrors()){
+            if (!member.hasErrors()) {
                 response.isSuccess = true
             }
         }

@@ -36,7 +36,7 @@ h1 {
     border-radius: 0;
 }
 
-.action-row{
+.action-row {
     width: 135px;
     text-align: center;
 }
@@ -90,8 +90,9 @@ h1 {
     float: left;
 }
 
-.alert{
-    min-height:50px;
+
+.alert {
+    min-height: 50px;
     width: 300px; /** Use 100% to fill the width of the page **/
     position: fixed;
     top: 0;
@@ -102,6 +103,6 @@ h1 {
     z-index: 2000;
 }
 
-.alert .message{
+.alert .message {
     font-weight: bold;
 }

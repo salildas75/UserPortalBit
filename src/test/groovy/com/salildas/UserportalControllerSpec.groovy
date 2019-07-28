@@ -12,7 +12,7 @@ class UserportalControllerSpec extends Specification implements ControllerUnitTe
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect: "fix me"
+        true == false
     }
 }

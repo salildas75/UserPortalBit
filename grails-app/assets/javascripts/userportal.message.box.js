@@ -1,4 +1,4 @@
-UP.messageBox =  (function () {
+UP.messageBox = (function () {
     var messageHtml = '<div class="alert"><span class="message"></span></div>',
         timeOut = null;
 
@@ -9,19 +9,19 @@ UP.messageBox =  (function () {
 
 
     function checkTimeOut() {
-        if(timeOut !== null) {
+        if (timeOut !== null) {
             clearTimeout(timeOut);
         }
     }
 
     return {
 
-        showMessage: function(success, message) {
-            if(!jQuery(".alert").length) {
+        showMessage: function (success, message) {
+            if (!jQuery(".alert").length) {
                 jQuery(document.body).append(messageHtml);
             }
             var messageType = "alert-success";
-            if(success !== true){
+            if (success !== true) {
                 messageType = "alert-danger";
             }
 
@@ -30,7 +30,7 @@ UP.messageBox =  (function () {
             messageElement.find(".message").text(message);
             messageElement.removeClass("alert-success").removeClass("alert-danger").addClass(messageType);
             messageElement.show();
-            timeOut = setTimeout(function() {
+            timeOut = setTimeout(function () {
                 hideMessage();
             }, 5000);
         }

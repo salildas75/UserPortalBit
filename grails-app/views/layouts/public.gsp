@@ -15,23 +15,20 @@
     <script type="text/javascript">
         <g:if test="${flash?.message && flash?.message?.info}">
         jQuery(document).ready(function () {
-            OCB.messageBox.showMessage(Boolean(${flash.message?.success}), "${flash.message?.info}");
+            UP.messageBox.showMessage(Boolean(${flash.message?.success}), "${flash.message?.info}");
         });
         </g:if>
     </script>
     <g:layoutHead/>
 </head>
+
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark rounded">
         <a class="navbar-brand" href="#">User Portal</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
     </nav>
 </header>
+
 <div class="container-fluid">
     <div class="row">
         <main role="main" class="col-sm-12 ml-sm-auto col-md-12 pt-3">

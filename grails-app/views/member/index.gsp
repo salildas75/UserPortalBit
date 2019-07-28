@@ -8,24 +8,26 @@
         %{--Actions--}%
         <span class="float-right">
 
-        %{--Search Panel --}%
-        <div class="btn-group">
-            <g:form controller="member" action="index" method="GET">
-                <div class="input-group" id="search-area">
-                    <g:select name="colName" class="form-control" from="[firstName: 'First Name', lastName: 'Last Name', email: 'Email']" value="${params?.colName}" optionKey="key" optionValue="value"/>
-                    <g:textField name="colValue" class="form-control" value="${params?.colValue}"/>
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="submit">Search</button>
-                    </span>
-                </div>
-            </g:form>
-        </div>
+            %{--Search Panel --}%
+            <div class="btn-group">
+                <g:form controller="member" action="index" method="GET">
+                    <div class="input-group" id="search-area">
+                        <g:select name="colName" class="form-control"
+                                  from="[firstName: 'First Name', lastName: 'Last Name', email: 'Email']"
+                                  value="${params?.colName}" optionKey="key" optionValue="value"/>
+                        <g:textField name="colValue" class="form-control" value="${params?.colValue}"/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Search</button>
+                        </span>
+                    </div>
+                </g:form>
+            </div>
 
-        %{--Create and Reload Panel--}%
-        <div class="btn-group">
-            <g:link controller="member" action="create" class="btn btn-success"><g:message code="create"/></g:link>
-            <g:link controller="member" action="index" class="btn btn-primary"><g:message code="reload"/></g:link>
-        </div>
+            %{--Create and Reload Panel--}%
+            <div class="btn-group">
+                <g:link controller="member" action="create" class="btn btn-success"><g:message code="create"/></g:link>
+                <g:link controller="member" action="index" class="btn btn-primary"><g:message code="reload"/></g:link>
+            </div>
         </span>
     </div>
 
@@ -41,27 +43,30 @@
             </tr>
             </thead>
             <tbody>
-                <g:each in="${memberList}" var="info">
-                    <tr>
-                        <td>${info?.firstName}</td>
-                        <td>${info?.lastName}</td>
-                        <td>${info?.email}</td>
+            <g:each in="${memberList}" var="info">
+                <tr>
+                    <td>${info?.firstName}</td>
+                    <td>${info?.lastName}</td>
+                    <td>${info?.email}</td>
 
-                        %{--Table Actions --}%
-                        <td>
-                            <div class="btn-group">
-                                <g:link controller="member" action="details" class="btn btn-secondary" id="${info.id}">Details</g:link>
-                                <g:link controller="member" action="edit" class="btn btn-secondary" id="${info.id}">Edit</g:link>
-                                <g:link controller="member" action="delete" id="${info.id}" class="btn btn-secondary delete-confirmation">Delete</g:link>
-                            </div>
-                        </td>
-                    </tr>
-                </g:each>
+                    %{--Table Actions --}%
+                    <td>
+                        <div class="btn-group">
+                            <g:link controller="member" action="details" class="btn btn-secondary"
+                                    id="${info.id}">Details</g:link>
+                            <g:link controller="member" action="edit" class="btn btn-secondary"
+                                    id="${info.id}">Edit</g:link>
+                            <g:link controller="member" action="delete" id="${info.id}"
+                                    class="btn btn-secondary delete-confirmation">Delete</g:link>
+                        </div>
+                    </td>
+                </tr>
+            </g:each>
             </tbody>
         </table>
-    %{--Pagination Area--}%
-    <div class="paginate">
-        <g:paginate total="${total ?: 0}" />
-    </div>
+        %{--Pagination Area--}%
+        <div class="paginate">
+            <g:paginate total="${total ?: 0}"/>
+        </div>
     </div>
 </div>

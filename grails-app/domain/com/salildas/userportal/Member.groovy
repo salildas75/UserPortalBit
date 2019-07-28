@@ -16,19 +16,19 @@ class Member {
     Date lastUpdated
 
     static constraints = {
-        email(email: true, nullable: false, unique: true, blank: false)
+        email(nullable: false, unique: true, blank: false)
         password(blank: false)
         lastName(nullable: true)
         identityHash(nullable: true)
         identityHashLastUpdate(nullable: true)
     }
 
-    def beforeInsert (){
+    def beforeInsert() {
         this.password = this.password.encodeAsMD5()
     }
 
 
-    def beforeUpdate(){
+    def beforeUpdate() {
         this.password = this.password.encodeAsMD5()
     }
 

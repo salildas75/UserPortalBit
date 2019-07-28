@@ -12,7 +12,7 @@ class MemberSpec extends Specification implements DomainUnitTest<Member> {
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect: "fix me"
+        true == false
     }
 }

@@ -6,12 +6,15 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4 mx-auto">
                     <h1 class="text-center login-title">User Login</h1>
+
                     <div class="account-wall">
                         <g:img dir="images" file="grails.svg" class="profile-img"/>
                         <g:form controller="authentication" action="doLogin" class="form-signin">
-                            <g:textField name="email" class="form-control" placeholder="Email" required="required" />
-                            <g:passwordField name="password" class="form-control" placeholder="Password" required="required" />
+                            <g:textField name="email" class="form-control" placeholder="Email" required="required"/>
+                            <g:passwordField name="password" class="form-control" placeholder="Password" required="required"/>
                             <g:submitButton class="btn btn-lg btn-primary btn-block" name="login" value="Login"/>
+                            <span>Are you new here</span>
+                            <g:link controller="authentication" action="registration">Register Now</g:link>
                         </g:form>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ package com.salildas.userportal
 import grails.testing.services.ServiceUnitTest
 import spock.lang.Specification
 
-class AuthenticationServiceSpec extends Specification implements ServiceUnitTest<AuthenticationService>{
+class AuthenticationServiceSpec extends Specification implements ServiceUnitTest<AuthenticationService> {
 
     def setup() {
     }
@@ -12,7 +12,7 @@ class AuthenticationServiceSpec extends Specification implements ServiceUnitTest
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect: "fix me"
+        true == false
     }
 }

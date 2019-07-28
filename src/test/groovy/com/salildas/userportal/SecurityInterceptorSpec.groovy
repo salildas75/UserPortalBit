@@ -13,10 +13,10 @@ class SecurityInterceptorSpec extends Specification implements InterceptorUnitTe
     }
 
     void "Test security interceptor matching"() {
-        when:"A request matches the interceptor"
-            withRequest(controller:"security")
+        when: "A request matches the interceptor"
+        withRequest(controller: "security")
 
-        then:"The interceptor does match"
-            interceptor.doesMatch()
+        then: "The interceptor does match"
+        interceptor.doesMatch()
     }
 }

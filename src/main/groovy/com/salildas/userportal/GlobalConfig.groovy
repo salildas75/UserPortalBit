@@ -3,7 +3,7 @@ package com.salildas.userportal
 class GlobalConfig {
 
     public static final def USER_TYPE = [
-            ADMINISTRATOR: "ADMINISTRATOR",
+            ADMINISTRATOR : "ADMINISTRATOR",
             REGULAR_MEMBER: "REGULAR_MEMBER",
     ]
 

@@ -12,7 +12,7 @@ class UIHelperTagLibSpec extends Specification implements TagLibUnitTest<UIHelpe
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect: "fix me"
+        true == false
     }
 }

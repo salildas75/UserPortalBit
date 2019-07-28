@@ -3,7 +3,7 @@ package com.salildas.userportal
 import grails.testing.services.ServiceUnitTest
 import spock.lang.Specification
 
-class MemberServiceSpec extends Specification implements ServiceUnitTest<MemberService>{
+class MemberServiceSpec extends Specification implements ServiceUnitTest<MemberService> {
 
     def setup() {
     }
@@ -12,7 +12,7 @@ class MemberServiceSpec extends Specification implements ServiceUnitTest<MemberS
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect: "fix me"
+        true == false
     }
 }

@@ -12,7 +12,7 @@ class MemberControllerSpec extends Specification implements ControllerUnitTest<M
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect: "fix me"
+        true == false
     }
 }
