@@ -13,6 +13,8 @@ class AppInitializationService {
             member.lastName = "Administrator"
             member.email = "admin@localhost.local"
             member.password = "admin"
+            member.phoneNumber = "01720000000"
+            member.address = "Dhanmondi, Dhaka"
             member.memberType = GlobalConfig.USER_TYPE.ADMINISTRATOR
             member.save(flash: true)
         }

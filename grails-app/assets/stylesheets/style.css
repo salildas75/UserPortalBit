@@ -106,3 +106,7 @@ h1 {
 .alert .message {
     font-weight: bold;
 }
+
+.text-center {
+    text-align: left;
+}

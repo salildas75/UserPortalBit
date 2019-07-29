@@ -19,6 +19,11 @@
         });
         </g:if>
     </script>
+    <script>
+        function clearFunction() {
+            document.getElementById("loginForm").reset();
+        }
+    </script>
 
     <g:layoutHead/>
 </head>

@@ -7,17 +7,24 @@
 
 <meta name="layout" content="public"/>
 
-<div class="card">
-    <div class="card-header">
-        Member Registration
-    </div>
-
-    <div class="card-body">
-        <g:form controller="authentication" action="doRegistration">
-            <g:render template="/member/form"/>
-            <g:submitButton name="registration" value="Registration" class="btn btn-primary"/>
-            <g:link controller="authentication" action="login" class="btn btn-primary"><g:message
-                    code="cancel"/></g:link>
-        </g:form>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div  class="card-header text-md-center" style="font-size: large">
+                    <g:img dir="images" file="user.png" class="profile-img"/>
+                    Registration Panel
+                </div>
+                <div class="card-body">
+                    <g:form controller="authentication" action="doRegistration">
+                        <g:render template="/member/form"/>
+                        <div class="col text-center">
+                            <g:submitButton name="registration" value="Registration" class="btn btn-primary d-inline-block"/>
+                            <g:link controller="authentication" action="login" class="btn btn-secondary d-inline-block"><g:message code="cancel"/></g:link>
+                        </div>
+                    </g:form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
