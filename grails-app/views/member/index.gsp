@@ -12,6 +12,7 @@
             <div class="btn-group">
                 <g:form controller="member" action="index" method="GET">
                     <div class="input-group" id="search-area">
+                        <g:select name="colName" class="form-control" from="[firstName: 'Name', email: 'Email', phoneNumber: 'Phone']" value="${params?.colName}" optionKey="key" optionValue="value"/>
                         <g:textField name="colValue" class="form-control" value="${params?.colValue}"/>
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="submit">Search</button>
